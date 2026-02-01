@@ -89,7 +89,7 @@ The easiest way to use the application is via the Gradio interface.
 ```powershell
 python src/app.py
 ```
-*   This will launch a local web server (usually at `http://127.0.0.1:7860`).
+*   This will launch a local web server (usually at `http://000.0.0.0:0000`).
 *   Open the link in your browser to access the **Inference** and **Training** tabs.
 
 ### 2. Command Line Interface
