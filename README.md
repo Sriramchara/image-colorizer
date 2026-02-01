@@ -1,6 +1,14 @@
-# Image Colorization with U-Net and Perceptual Loss
+# Image Colorizer with U-Net & Perceptual Loss
 
-This project implements an image colorization pipeline using a Convolutional Autoencoder (U-Net) and VGG16-based Perceptual Loss.
+**An interactive Deep Learning application to colorize black and white images.**
+
+Built with **PyTorch** and **Gradio**, this project features a U-Net architecture trained with VGG16 Perceptual Loss to produce realistic colorization results. It includes a user-friendly web UI for both training custom models and running inference on grayscale images.
+
+## Features
+*   **Model**: U-Net with ResNet-like encoder blocks or standard Conv blocks.
+*   **Loss**: L1 Pixel Loss + VGG16 Perceptual Loss for sharp, perceptually accurate colors.
+*   **Preprocessing**: RGB to LAB color space conversion (L channel input, ab channels target).
+*   **Interface**: Interactive Gradio Web UI.
 
 ## Hardware Requirements
 - **GPU**: NVIDIA GTX 1650 (4GB VRAM) or better recommended.
@@ -58,8 +66,3 @@ To colorize a grayscale image:
 ```powershell
 python src/inference.py --img path/to/gray_image.jpg --ckpt checkpoints/epoch_20.pth --out result.jpg
 ```
-
-## Description
-*   **Model**: U-Net with ResNet-like encoder blocks (simplified) or standard Conv blocks.
-*   **Loss**: L1 Pixel Loss + VGG16 Perceptual Loss.
-*   **Preprocessing**: RGB -> LAB conversion. L channel is input, ab channels are target.
