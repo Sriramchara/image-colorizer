@@ -1,0 +1,13 @@
+--index-url https://download.pytorch.org/whl/cu118
+torch==2.5.1+cu118
+torchvision==0.20.1+cu118
+torchaudio==2.5.1+cu118
+numpy<2.0
+opencv-python
+matplotlib
+seaborn
+albumentations
+tqdm
+tensorboard
+scikit-learn
+gradio
