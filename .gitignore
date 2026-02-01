@@ -8,10 +8,15 @@ __pycache__/
 venv/
 ENV/
 
-# Data and Models
+# Large Data (Exceeds GitHub Limits)
 data/
+
+# Large Models (Exceeds GitHub Limits)
+# If you want to track small checkpoints, comment this out, 
+# but beware of the 100MB file limit.
 checkpoints/
-outputs/
+
+# Logs
 logs/
 
 # IDE settings
